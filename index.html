@@ -227,7 +227,7 @@ figure figcaption p {
 	
 </style>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="background-color: #f0e1e4">
-	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="icon-chevron-circle-up" style="font-size: 1.8em;"></i></button>  
+	
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 			<div class="container">
 			<div><a class="navbar-brand" href="index.html" style="letter-spacing:2px">&nbsp;&nbsp;&nbsp;Surasa</a></div>
@@ -685,27 +685,9 @@ figure figcaption p {
   <script src="plugins/facncybox/jquery.fancybox.js"></script>
   <script>
 		
-	//Get the button
-	var mybutton = document.getElementById("myBtn");
+	
 
-	// When the user scrolls down 20px from the top of the document, show the button
-	window.onscroll = function() {scrollFunction()};
-
-	function scrollFunction() {
-	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-		mybutton.style.display = "block";
-	} else {
-		mybutton.style.display = "none";
-	}
-	}
-
-	// When the user clicks on the button, scroll to the top of the document
-	function topFunction() {
-	document.body.scrollTop = 0;
-	document.documentElement.scrollTop = 0;
-	}
-
-	//for imahe carousel
+	//for image carousel
 	jQuery(document).ready(function(){
 	"use strict";
 	new WOW().init();
