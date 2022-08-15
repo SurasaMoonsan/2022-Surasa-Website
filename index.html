@@ -242,25 +242,25 @@ position:absolute;
 
 </style>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="background-color: #f0e1e4">
-		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+		<header class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 			<div class="container">
-			<div><a class="navbar-brand" href="index.html" style="letter-spacing:2px">&nbsp;&nbsp;&nbsp;Surasa</a></div>
-			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			</button>
+				<div><a class="navbar-brand" href="index.html" style="letter-spacing:2px">&nbsp;&nbsp;&nbsp;Surasa</a></div>
+				<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="oi oi-menu"></span> Menu
+				</button>
 
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav nav ml-auto">
-				<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-				<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-				<li class="nav-item"><a href="#goal-section" class="nav-link"><span>Goal</span></a></li>
-				<li class="nav-item"><a href="#experience-section" class="nav-link"><span>Experience</span></a></li>
-				<li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
-				<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-				</ul>
+				<div class="collapse navbar-collapse" id="ftco-nav">
+					<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#goal-section" class="nav-link"><span>Goal</span></a></li>
+					<li class="nav-item"><a href="#experience-section" class="nav-link"><span>Experience</span></a></li>
+					<li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+					</ul>
+				</div>
 			</div>
-			</div>
-		</nav>
+		</header>
 	  <section id="home-section" class="hero">
 		  <div class="home-slider  owl-carousel">
 	      <div class="slider-item ">
@@ -773,13 +773,14 @@ position:absolute;
   <script src="plugins/slider/slider.js"></script>
   <script src="plugins/facncybox/jquery.fancybox.js"></script>
   <script>
+
 	const navLinks = document.querySelectorAll('.nav-item')
 	const menuToggle = document.getElementById('ftco-nav')
 	const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false})
 	navLinks.forEach((l) => {
 		l.addEventListener('click', () => { bsCollapse.toggle() })
 	})
-						    
+
 	//for imahe carousel
 	jQuery(document).ready(function(){
 	"use strict";
