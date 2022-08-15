@@ -25,6 +25,10 @@
 
   </head>
   <style>
+	html {
+	scroll-behavior: smooth;
+	}
+
 	.lightbrown{
 	color:#a68f8a;
 	}
@@ -103,14 +107,14 @@
   background: url("images/right.png") no-repeat scroll center center;
   height: 50px;
   width: 50px;
-  right: 0rem;
+  right: -5rem;
 }
 
 .fancybox-prev span {
   background: url("images/left.png") no-repeat scroll center center;
   height: 50px;
   width: 50px;
-  left: 0em;
+  left: -5em;
 }
 
 .fancybox-title {
@@ -239,9 +243,10 @@ height:100%;
 width:100%;
 position:absolute;
 }
+
 </style>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="background-color: #f0e1e4">
-	
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="icon-chevron-circle-up" style="font-size: 1.8em;"></i></button>  
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 			<div class="container">
 			<div><a class="navbar-brand" href="index.html" style="letter-spacing:2px">&nbsp;&nbsp;&nbsp;Surasa</a></div>
@@ -261,15 +266,15 @@ position:absolute;
 			</div>
 			</div>
 		</nav>
-	<section id="home-section" class="hero">
+	  <section id="home-section" class="hero">
 		  <div class="home-slider  owl-carousel">
 	      <div class="slider-item ">
-		<div class="overlay"></div>
-		<div class="container">
-		  <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-			<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_11.png);">
-				<div class="overlay"></div>
-			</div>
+	      	<div class="overlay"></div>
+	        <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_11.png);">
+	          		<div class="overlay"></div>
+	          	</div>
 				<div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 					<div class="text Greeting-wrap">
 						<span class="subheading">Hello!</span>
@@ -277,29 +282,29 @@ position:absolute;
 						<h3 class="mb-4" style="color:#a68f8a; text-align: center;">A Website Interface Designer.</h3>
 					</div>
 				</div>
-			</div>
-		</div>
+	        	</div>
+	        </div>
 	      </div>
 
 	      <div class="slider-item">
-		<div class="overlay"></div>
-		<div class="container">
-		  <div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-			<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_222.png);">
-				<div class="overlay"></div>
-			</div>
-			  <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-				<div class="text Greeting-wrap">
-					<span class="subheading">Favorite Quote:</span>
+	      	<div class="overlay"></div>
+	        <div class="container">
+	          <div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_222.png);">
+	          		<div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text Greeting-wrap">
+		          		<span class="subheading">Favorite Quote:</span>
 						<span style="width:100%; text-align: center;"><h1><i class="icon-quote-left" style="font-size: 0.3em; position:absolute"> </i>&nbsp;&nbsp;<span>Life</span><i class="icon-quote-right" style="font-size: 0.3em; position:absolute;"></i><h3 class="mb-4" >is not a problem to be solved<br><span>, but a reality to be experienced.</h3></h1></span>
-			    </div>
-			  </div>
-			</div>
-		</div>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
 	      </div>
 	    </div>
-	</section>  
-    	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    </section>
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
     	<div class="container"  style="padding-top: 4em;">
 			<div class="row d-flex">
 				<div class="col-md-6 col-lg-5 d-flex">
@@ -344,7 +349,7 @@ position:absolute;
           </div>
         </div>
     		<div class="row">
-				<div class="col-md-4 text-center d-flex ftco-animate">
+				<div class="col-md-4 col-6 text-center d-flex ftco-animate">
 					<a class="services-1">
 						<span class="icon">
 							<i class="flaticon-analysis"></i>
@@ -355,7 +360,7 @@ position:absolute;
 						<h3 style="font-size: 1em;">To be more expert in coding the responsive website.</h3>
 					</a>
 				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
+				<div class="col-md-4 col-6 text-center d-flex ftco-animate">
 					<a class="services-1">
 						<span class="icon">
 							<i class="flaticon-flasks"></i>
@@ -366,7 +371,7 @@ position:absolute;
 						<h3 style="font-size: 1em;">Learn and inspire new things.</h3>
 					</a>
 				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
+				<div class="col-md-4 col-6 text-center d-flex ftco-animate">
 					<a class="services-1">
 						<span class="icon">
 							<i class="flaticon-ideas"></i>
@@ -377,7 +382,7 @@ position:absolute;
 						<h3 style="font-size: 1em;">Wish my favorite hobby (Drawing Art) can support my job. </h3>
 					</a>
 				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
+				<div class="col-md-4 col-6 text-center d-flex ftco-animate">
 					<a class="services-1">
 						<span class="icon">
 							<i class="flaticon-ideas"></i>
@@ -388,7 +393,7 @@ position:absolute;
 						<h3 style="font-size: 1em;">have a good team which everyone help each other.</h3>
 					</a>
 				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
+				<div class="col-md-4 col-6 text-center d-flex ftco-animate">
 					<a" class="services-1">
 						<span class="icon">
 							<i class="flaticon-ideas"></i>
@@ -399,7 +404,7 @@ position:absolute;
 						<h3 style="font-size: 1em;">Fun Workplace motivate the employee productivity & heathy.</h3>
 					</a>
 				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
+				<div class="col-md-4 col-6 text-center d-flex ftco-animate">
 					<a class="services-1">
 						<span class="icon">
 							<i class="flaticon-ideas"></i>
@@ -551,7 +556,7 @@ position:absolute;
 						<h5 style="margin-bottom: 0em; color:#562F26; text-align: right;"> Tools : Photoshop&nbsp;&nbsp;&nbsp;</h5> 
 					</div>
 				</div>
-				<div class="col-sm-4 col-xs-12">
+				<div class="col-sm-4 col-12">
 					<figure class="wow fadeInLeft animated portfolio-item animated" data-wow-duration="500ms" data-wow-delay="0ms" style="visibility: visible; animation-duration: 300ms; -webkit-animation-duration: 300ms; animation-delay: 0ms; -webkit-animation-delay: 0ms; animation-name: fadeInLeft; -webkit-animation-name: fadeInLeft;">
 						<div class="img-wrapper">
 							<img src="images/exam-1.jpg" class="img-responsive" alt="this is a title" style="width:100%">
@@ -563,7 +568,7 @@ position:absolute;
 						</div>
 					</figure>
 				</div>
-				<div class="col-sm-8 col-xs-12">
+				<div class="col-sm-8 col-12">
 					<figure class="wow fadeInLeft animated portfolio-item animated" data-wow-duration="500ms" data-wow-delay="0ms" style="visibility: visible; animation-duration: 300ms; -webkit-animation-duration: 300ms; animation-delay: 0ms; -webkit-animation-delay: 0ms; animation-name: fadeInLeft; -webkit-animation-name: fadeInLeft;">
 						<div class="img-wrapper">
 							<img src="images/exam-2.jpg" class="img-responsive" alt="this is a title" style="width:100%; height: 100%">
@@ -585,7 +590,7 @@ position:absolute;
 						<h5 style="margin-bottom: 0em; color:#562F26; text-align: right;"> Tools : Photoshop&nbsp;&nbsp;&nbsp;</h5> 
 					</div>
 				</div>
-				<div class="col-sm-4 col-xs-12">
+				<div class="col-sm-4 col-4	">
 					<figure class="wow fadeInLeft animated portfolio-item animated" data-wow-duration="500ms" data-wow-delay="0ms" style="visibility: visible; animation-duration: 300ms; -webkit-animation-duration: 300ms; animation-delay: 0ms; -webkit-animation-delay: 0ms; animation-name: fadeInLeft; -webkit-animation-name: fadeInLeft;">
 						<div class="img-wrapper">
 							<img src="images/item-1.jpg" class="img-responsive" alt="this is a title" style="width:100%">
@@ -597,7 +602,7 @@ position:absolute;
 						</div>
 					</figure>
 				</div>
-				<div class="col-sm-4 col-xs-12">
+				<div class="col-sm-4 col-4">
 					<figure class="wow fadeInLeft animated animated" data-wow-duration="500ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 300ms; -webkit-animation-duration: 300ms; animation-delay: 300ms; -webkit-animation-delay: 300ms; animation-name: fadeInLeft; -webkit-animation-name: fadeInLeft;">
 						<div class="img-wrapper justify-content-center align-items-center">
 							<img src="images/item-2.jpg" class="img-responsive" alt="this is a title" style="width:100%">
@@ -609,7 +614,7 @@ position:absolute;
 						</div>
 					</figure>
 				</div>
-				<div class="col-sm-4 col-xs-12">
+				<div class="col-sm-4 col-4">
 					<figure class="wow fadeInLeft animated animated" data-wow-duration="500ms" data-wow-delay="500ms" style="visibility: visible; animation-duration: 300ms; -webkit-animation-duration: 300ms; animation-delay: 300ms; -webkit-animation-delay: 300ms; animation-name: fadeInLeft; -webkit-animation-name: fadeInLeft;">
 						<div class="img-wrapper">
 							<img src="images/item-3.jpg" class="img-responsive" alt="" style="width:100%">
@@ -621,7 +626,7 @@ position:absolute;
 						</div>
 					</figure>
 				</div>
-				<div class="col-sm-4 col-xs-12">
+				<div class="col-sm-4 col-4">
 					<figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="700ms" style="visibility: hidden; animation-duration: 300ms; -webkit-animation-duration: 300ms; animation-delay: 600ms; -webkit-animation-delay: 600ms; animation-name: none; -webkit-animation-name: none;">
 						<div class="img-wrapper">
 							<img src="images/item-4.jpg" class="img-responsive" alt="" style="width:100%">
@@ -633,7 +638,7 @@ position:absolute;
 						</div>
 					</figure>
 				</div>
-				<div class="col-sm-4 col-xs-12">
+				<div class="col-sm-4 col-4">
 					<figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="900ms" style="visibility: hidden; animation-duration: 300ms; -webkit-animation-duration: 300ms; animation-delay: 900ms; -webkit-animation-delay: 900ms; animation-name: none; -webkit-animation-name: none;">
 						<div class="img-wrapper">
 							<img src="images/item-5.jpg" class="img-responsive" alt="" style="width:100%">
@@ -645,7 +650,7 @@ position:absolute;
 						</div>
 					</figure>
 				</div>
-				<div class="col-sm-4 col-xs-12">
+				<div class="col-sm-4 col-4">
 					<figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="1100ms" style="visibility: hidden; animation-duration: 300ms; -webkit-animation-duration: 300ms; animation-delay: 1200ms; -webkit-animation-delay: 1200ms; animation-name: none; -webkit-animation-name: none;">
 						<div class="img-wrapper">
 							<img src="images/item-6.jpg" class="img-responsive" alt="" style="width:100%">
@@ -672,11 +677,11 @@ position:absolute;
 			<h5>Sincerely appreciate your contact</h5>
           </div>
         </div>
-	<div class="align-self-stretch box text-center ftco-animate" valign="top" style="padding-bottom: 3.5rem !important;">
-		<div class="map-responsive">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3873.7856449853266!2d100.49362389048282!3d13.851901670490964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ba58feb5487%3A0xc5e04426ea4c2a64!2s172%2F8%20Nonthaburi%20Bypath%20Rd%208%2C%20Tambon%20Suan%20Yai%2C%20Amphoe%20Mueang%20Nonthaburi%2C%20Chang%20Wat%20Nonthaburi%2011000!5e0!3m2!1sen!2sth!4v1659976352293!5m2!1sen!2sth" width="600" height="450" style="border:4px solid #c2a49d; padding:1em; border-radius: 25px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		<div class="align-self-stretch box text-center ftco-animate" valign="top" style="padding-bottom: 3.5rem !important;">
+			<div class="map-responsive">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3873.7856449853266!2d100.49362389048282!3d13.851901670490964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ba58feb5487%3A0xc5e04426ea4c2a64!2s172%2F8%20Nonthaburi%20Bypath%20Rd%208%2C%20Tambon%20Suan%20Yai%2C%20Amphoe%20Mueang%20Nonthaburi%2C%20Chang%20Wat%20Nonthaburi%2011000!5e0!3m2!1sen!2sth!4v1659976352293!5m2!1sen!2sth" width="600" height="450" style="border:4px solid #c2a49d; padding:1em; border-radius: 25px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
 		</div>
-	</div>	
         <div class="row d-flex contact-info mb-5">
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
           	<div class="align-self-stretch box p-4 text-center">
@@ -774,9 +779,27 @@ position:absolute;
   <script src="plugins/facncybox/jquery.fancybox.js"></script>
   <script>
 		
-	
+	//Get the button
+	var mybutton = document.getElementById("myBtn");
 
-	//for image carousel
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		mybutton.style.display = "block";
+	} else {
+		mybutton.style.display = "none";
+	}
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+	}
+
+	//for imahe carousel
 	jQuery(document).ready(function(){
 	"use strict";
 	new WOW().init();
