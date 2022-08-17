@@ -241,9 +241,9 @@ position:absolute;
 }
 
 </style>
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="background-color: #f0e1e4">
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="background-image: url(images/background.jpg); background-repeat: no-repeat; background-attachment: fixed; background-position: center; background-size: cover;">
 		<header class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-			<div class="container" style="background-color: purple;">
+			<div class="container">
 				<div><a class="navbar-brand" href="index.html" style="letter-spacing:2px">&nbsp;&nbsp;&nbsp;Surasa</a></div>
 				<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="oi oi-menu"></span> Menu
@@ -261,42 +261,23 @@ position:absolute;
 				</div>
 			</div>
 		</header>
-		<section id="home-section" class="hero" style="background-color: palevioletred;">
-			<div class="home-slider  owl-carousel">
-			<div class="slider-item ">
-				<div class="overlay"></div>
-			  <div class="container">
-				<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-					<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_11.png);">
-						<div class="overlay"></div>
+		<section id="home-section" class="hero">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-6" style="height:40vh; padding-top: 5vh;">
+						<div style="background-color: rgba(255, 235, 205, 0.815); border-radius:20px; padding:3em 0em;">
+							<h5>&nbsp;&nbsp;&nbsp;&nbsp;<span style="padding: 4px 12px; background-color:#fc8395; color:white;">HELLO ! <span class="icon-heart" style="color:white"></span></span></h5>
+							<div class="heading-section">
+								<h2>&nbsp;&nbsp;&nbsp;I'm </h2>
+								<div style="display:flex; justify-content:center; align-items:center" align="center"><h2><span style="color: #fc8395;" id="type"></span></h2></div>
+							</div>
+						</div>
 					</div>
-				  <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-					  <div class="text Greeting-wrap">
-						  <span class="subheading">Hello!</span>
-						  <span style="width:100%; text-align: center;"><h1 class="mb-4 mt-3"><i class="icon-quote-left" style="font-size: 0.3em; position:absolute"> </i>&nbsp;&nbsp;I'm <span>Surasa Moonsan</span><i class="icon-quote-right" style="font-size: 0.3em; position:absolute;"></i></h1></span>
-						  <h3 class="mb-4" style="color:#a68f8a">A Website Interface Designer</h3>
-					  </div>
-				  </div>
-				  </div>
-			  </div>
+					<div class="col-lg-6" style="padding-top: 2em;">
+						<img class="img-fluid img-radius" src="images/bg_11.png">
+					</div>
+				</div>
 			</div>
-			<div class="slider-item">
-				<div class="overlay"></div>
-			  <div class="container">
-				<div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-					<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_222.png);">
-						<div class="overlay"></div>
-					</div>
-					<div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-						<div class="text Greeting-wrap">
-							<span class="subheading">Favorite Quote:</span>
-						  <span style="width:100%; text-align: center;"><h1><i class="icon-quote-left" style="font-size: 0.3em; position:absolute"> </i>&nbsp;&nbsp;<span>Life</span><i class="icon-quote-right" style="font-size: 0.3em; position:absolute;"></i><h3 class="mb-4" >is not a problem to be solved<br><span>, but a reality to be experienced.</h3></h1></span>
-					  </div>
-					</div>
-				  </div>
-			  </div>
-			</div>
-		  </div>
 	  </section>
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
     	<div class="container"  style="padding-top: 4em;">
@@ -771,6 +752,7 @@ position:absolute;
   <script src="plugins/wow-js/wow.min.js"></script>
   <script src="plugins/slider/slider.js"></script>
   <script src="plugins/facncybox/jquery.fancybox.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
   <script>
 
 	const navLinks = document.querySelectorAll('.nav-item')
@@ -778,6 +760,16 @@ position:absolute;
 	const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false})
 	navLinks.forEach((l) => {
 		l.addEventListener('click', () => { bsCollapse.toggle() })
+	})
+
+	var typed = new Typed('#type', {
+	// Waits 1000ms after typing "First"
+	strings: ['Surasa.', 'A Web Designer.', 'A UX/UI Designer.'],
+	smartBackSpace: true,
+	loop: true,
+	typeSpeed: 100,
+	backSpeed: 100,
+	fadeOut: true,
 	})
 
 	//for imahe carousel
@@ -814,6 +806,7 @@ position:absolute;
 			}
 		}
 	});
-  </script>
-  </body>
+
+	</script>
+	</body>
 </html>
