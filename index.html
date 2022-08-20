@@ -166,6 +166,9 @@ figure .overlay {
   background: rgba(0, 0, 0, 0.7);
   opacity: 0;
   transition: opacity 400ms;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
 }
 
 figure .overlay a {
@@ -192,8 +195,7 @@ figure .overlay:hover a {
 
 figure .buttons {
   position: absolute;
-  top: 45%;
-  left: 24%;
+  margin: auto;
 }
 
 figure figcaption {
@@ -219,10 +221,6 @@ figure figcaption p {
 
 .gallery {
   padding-bottom: 5em;
-}
-
-.gallery figure .buttons {
-  left: 40%;
 }
 
 .map-responsive{
@@ -349,7 +347,7 @@ position:absolute;
 				<div class="col-md-4 col-6 text-center d-flex ftco-animate">
 					<a class="services-1">
 						<span class="icon">
-							<i class="flaticon-ideas"></i>
+							<i class="flaticon-web-design"></i>
 						</span>
 						<div class="desc">
 							<h3 class="mb-5">DO THE ART<br>&nbsp;</h3>
@@ -371,7 +369,7 @@ position:absolute;
 				<div class="col-md-4 col-6 text-center d-flex ftco-animate">
 					<a" class="services-1">
 						<span class="icon">
-							<i class="flaticon-ideas"></i>
+							<i class="flaticon-innovation"></i>
 						</span>
 						<div class="desc">
 							<h3 class="mb-5">Fun Workplace<br>&nbsp;</h3>
@@ -382,7 +380,7 @@ position:absolute;
 				<div class="col-md-4 col-6 text-center d-flex ftco-animate">
 					<a class="services-1">
 						<span class="icon">
-							<i class="flaticon-ideas"></i>
+							<i class="flaticon-ux-design"></i>
 						</span>
 						<div class="desc">
 							<h3 class="mb-5">Reasonably Deadline<br>&nbsp;</h3>
@@ -504,7 +502,7 @@ position:absolute;
 						<div class="progress">
 							<div class="progress-bar color-4" role="progressbar" aria-valuenow="20"
 							aria-valuemin="0" aria-valuemax="100" style="width:20%">
-							<span>20%</span>
+							<span style="right:-30px">20%</span>
 							</div>
 						</div>
 					</div>
@@ -536,7 +534,7 @@ position:absolute;
 						<div class="img-wrapper">
 							<img src="images/exam-1.jpg" class="img-responsive" alt="this is a title" style="width:100%">
 							<div class="overlay">
-								<div class="buttons">
+								<div class="buttons" align="center">
 									<a rel="gallery" class="fancybox" href="images/exam-1.jpg" style="padding:5px">Demo</a>
 								</div>
 							</div>
@@ -547,7 +545,7 @@ position:absolute;
 					<figure class="wow fadeInLeft animated portfolio-item animated" data-wow-duration="500ms" data-wow-delay="0ms" style="visibility: visible; animation-duration: 300ms; -webkit-animation-duration: 300ms; animation-delay: 0ms; -webkit-animation-delay: 0ms; animation-name: fadeInLeft; -webkit-animation-name: fadeInLeft;">
 						<div class="img-wrapper">
 							<img src="images/exam-2.jpg" class="img-responsive" alt="this is a title" style="width:100%; height: 100%">
-							<div class="overlay">
+							<div class="overlay" >
 								<div class="buttons">
 									<a rel="gallery" class="fancybox" href="images/exam-2.jpg" style="padding:5px">Demo</a>
 								</div>
@@ -673,7 +671,7 @@ position:absolute;
           			<span class="icon-phone2"></span>
           		</div>
           		<h3 class="mb-4">Contact Number</h3>
-	            <p  style="color:white; background-color:#a68f8a">080-392-6351</p>
+	            <p style="color:white;"><span style="background-color:#a68f8a; padding: 5px 8px;">080-392-6351</span></p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -682,7 +680,7 @@ position:absolute;
           			<span class="icon-paper-plane"></span>
           		</div>
           		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:surasamoonsan@gmail.com" style="color:#a68f8a"><u>surasamoonsan@gmail.com</u></a></p>
+	            <p><a href="mailto:surasamoonsan@gmail.com" style="color:#a68f8a;"><u>surasamoonsan@gmail.com</u></a></p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
